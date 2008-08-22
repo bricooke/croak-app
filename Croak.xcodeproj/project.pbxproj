@@ -16,6 +16,11 @@
 		D62BD9B60E5E0D1E00119FB7 /* HMBlkAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62BD9B50E5E0D1E00119FB7 /* HMBlkAppKit.framework */; };
 		D62BD9E50E5E113500119FB7 /* HMBlkAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D62BD9B50E5E0D1E00119FB7 /* HMBlkAppKit.framework */; };
 		D62BDA460E5E173200119FB7 /* CroakController.rb in Resources */ = {isa = PBXBuildFile; fileRef = D62BDA450E5E173200119FB7 /* CroakController.rb */; };
+		D62BDAB90E5E1B8800119FB7 /* CroakCell.rb in Resources */ = {isa = PBXBuildFile; fileRef = D62BDAB80E5E1B8800119FB7 /* CroakCell.rb */; };
+		D62BDB770E5E32DB00119FB7 /* Error.rb in Resources */ = {isa = PBXBuildFile; fileRef = D62BDB760E5E32DB00119FB7 /* Error.rb */; };
+		D6436F020E5E5F4D0018B508 /* green_frog.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6436F000E5E5F4D0018B508 /* green_frog.gif */; };
+		D6436F030E5E5F4D0018B508 /* grey_frog.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6436F010E5E5F4D0018B508 /* grey_frog.gif */; };
+		D6436F140E5EE0380018B508 /* WindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = D6436F130E5EE0380018B508 /* WindowController.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,8 +46,13 @@
 		4DDCA7110ACC9A6100E082CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDCA7120ACC9A6100E082CE /* Croak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Croak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62BD9670E5D9CAB00119FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D62BD9B50E5E0D1E00119FB7 /* HMBlkAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HMBlkAppKit.framework; sourceTree = "<group>"; };
+		D62BD9B50E5E0D1E00119FB7 /* HMBlkAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HMBlkAppKit.framework; path = 3rdParty/HMBlkAppKit.framework; sourceTree = "<group>"; };
 		D62BDA450E5E173200119FB7 /* CroakController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CroakController.rb; path = controllers/CroakController.rb; sourceTree = "<group>"; };
+		D62BDAB80E5E1B8800119FB7 /* CroakCell.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CroakCell.rb; path = views/CroakCell.rb; sourceTree = "<group>"; };
+		D62BDB760E5E32DB00119FB7 /* Error.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = Error.rb; path = Models/Error.rb; sourceTree = "<group>"; };
+		D6436F000E5E5F4D0018B508 /* green_frog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = green_frog.gif; sourceTree = "<group>"; };
+		D6436F010E5E5F4D0018B508 /* grey_frog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grey_frog.gif; sourceTree = "<group>"; };
+		D6436F130E5EE0380018B508 /* WindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = WindowController.rb; path = controllers/WindowController.rb; sourceTree = "<group>"; };
 		E8F5E24E03AEB6EC03A81C6F /* RubyCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RubyCocoa.framework; path = /System/Library/Frameworks/RubyCocoa.framework; sourceTree = "<absolute>"; };
 		E8F5E25803AEB7C803A81C6F /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +74,9 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D62BDA450E5E173200119FB7 /* CroakController.rb */,
+				D62BDB750E5E328600119FB7 /* Models */,
+				D62BDAB70E5E1B5D00119FB7 /* Controllers */,
+				D62BDAB60E5E1B5400119FB7 /* Views */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -99,6 +111,7 @@
 		29B97314FDCFA39411CA2CEA /* Croak */ = {
 			isa = PBXGroup;
 			children = (
+				D62BDA880E5E19E800119FB7 /* 3rdParty */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -121,6 +134,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D6436F000E5E5F4D0018B508 /* green_frog.gif */,
+				D6436F010E5E5F4D0018B508 /* grey_frog.gif */,
 				D62BD9660E5D9CAB00119FB7 /* MainMenu.xib */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 			);
@@ -134,6 +149,38 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D62BDA880E5E19E800119FB7 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 3rdParty;
+			sourceTree = "<group>";
+		};
+		D62BDAB60E5E1B5400119FB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D62BDAB80E5E1B8800119FB7 /* CroakCell.rb */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D62BDAB70E5E1B5D00119FB7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D62BDA450E5E173200119FB7 /* CroakController.rb */,
+				D6436F130E5EE0380018B508 /* WindowController.rb */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D62BDB750E5E328600119FB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D62BDB760E5E32DB00119FB7 /* Error.rb */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +242,11 @@
 				4DDCA7080ACC9A6100E082CE /* rb_main.rb in Resources */,
 				D62BD9680E5D9CAB00119FB7 /* MainMenu.xib in Resources */,
 				D62BDA460E5E173200119FB7 /* CroakController.rb in Resources */,
+				D62BDAB90E5E1B8800119FB7 /* CroakCell.rb in Resources */,
+				D62BDB770E5E32DB00119FB7 /* Error.rb in Resources */,
+				D6436F020E5E5F4D0018B508 /* green_frog.gif in Resources */,
+				D6436F030E5E5F4D0018B508 /* grey_frog.gif in Resources */,
+				D6436F140E5EE0380018B508 /* WindowController.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
