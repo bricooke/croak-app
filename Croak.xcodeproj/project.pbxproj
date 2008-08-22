@@ -50,8 +50,8 @@
 		D62BDA450E5E173200119FB7 /* CroakController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CroakController.rb; path = controllers/CroakController.rb; sourceTree = "<group>"; };
 		D62BDAB80E5E1B8800119FB7 /* CroakCell.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CroakCell.rb; path = views/CroakCell.rb; sourceTree = "<group>"; };
 		D62BDB760E5E32DB00119FB7 /* Error.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = Error.rb; path = Models/Error.rb; sourceTree = "<group>"; };
-		D6436F000E5E5F4D0018B508 /* green_frog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = green_frog.gif; sourceTree = "<group>"; };
-		D6436F010E5E5F4D0018B508 /* grey_frog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grey_frog.gif; sourceTree = "<group>"; };
+		D6436F000E5E5F4D0018B508 /* green_frog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = green_frog.gif; path = Resources/green_frog.gif; sourceTree = "<group>"; };
+		D6436F010E5E5F4D0018B508 /* grey_frog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = grey_frog.gif; path = Resources/grey_frog.gif; sourceTree = "<group>"; };
 		D6436F130E5EE0380018B508 /* WindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = WindowController.rb; path = controllers/WindowController.rb; sourceTree = "<group>"; };
 		E8F5E24E03AEB6EC03A81C6F /* RubyCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RubyCocoa.framework; path = /System/Library/Frameworks/RubyCocoa.framework; sourceTree = "<absolute>"; };
 		E8F5E25803AEB7C803A81C6F /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
