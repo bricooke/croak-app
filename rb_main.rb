@@ -13,11 +13,17 @@ include OSX
 
 Thread.abort_on_exception = true
 
+%w(EMKeychainProxy EMKeyChainItem).each do |class_name|
+  OSX.ns_import class_name.to_sym
+end
+
 def rb_main_init  
   path = OSX::NSBundle.mainBundle.resourcePath.fileSystemRepresentation
   rbfiles = Dir.entries(path).select {|x| /\.rb\z/ =~ x}
   rbfiles -= [ File.basename(__FILE__) ]
   rbfiles.each do |path|
+    next if File.basename(path) == "Error.rb"
+    NSLog(path)
     require( File.basename(path) )
   end
 end

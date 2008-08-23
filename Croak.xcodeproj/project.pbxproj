@@ -13,14 +13,23 @@
 		4DDCA70C0ACC9A6100E082CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		4DDCA70D0ACC9A6100E082CE /* RubyCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E24E03AEB6EC03A81C6F /* RubyCocoa.framework */; };
 		D62BD9680E5D9CAB00119FB7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62BD9660E5D9CAB00119FB7 /* MainMenu.xib */; };
-		D62BD9B60E5E0D1E00119FB7 /* HMBlkAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62BD9B50E5E0D1E00119FB7 /* HMBlkAppKit.framework */; };
-		D62BD9E50E5E113500119FB7 /* HMBlkAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D62BD9B50E5E0D1E00119FB7 /* HMBlkAppKit.framework */; };
 		D62BDA460E5E173200119FB7 /* CroakController.rb in Resources */ = {isa = PBXBuildFile; fileRef = D62BDA450E5E173200119FB7 /* CroakController.rb */; };
 		D62BDAB90E5E1B8800119FB7 /* CroakCell.rb in Resources */ = {isa = PBXBuildFile; fileRef = D62BDAB80E5E1B8800119FB7 /* CroakCell.rb */; };
 		D62BDB770E5E32DB00119FB7 /* Error.rb in Resources */ = {isa = PBXBuildFile; fileRef = D62BDB760E5E32DB00119FB7 /* Error.rb */; };
 		D6436F020E5E5F4D0018B508 /* green_frog.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6436F000E5E5F4D0018B508 /* green_frog.gif */; };
 		D6436F030E5E5F4D0018B508 /* grey_frog.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6436F010E5E5F4D0018B508 /* grey_frog.gif */; };
 		D6436F140E5EE0380018B508 /* WindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = D6436F130E5EE0380018B508 /* WindowController.rb */; };
+		D68AEF390E5F3D210015C34A /* HMBlkAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D6E4F6E20E5F3CD70050ACB4 /* HMBlkAppKit.framework */; };
+		D69616CE0E603AEA0011C2FA /* active_resource_instance_authentication in Resources */ = {isa = PBXBuildFile; fileRef = D69616C20E603AEA0011C2FA /* active_resource_instance_authentication */; };
+		D69617170E603D3D0011C2FA /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D69617130E603D3D0011C2FA /* EMKeychainItem.m */; };
+		D69617190E603D3D0011C2FA /* EMKeychainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D69617150E603D3D0011C2FA /* EMKeychainProxy.m */; };
+		D696171C0E603DF00011C2FA /* ApplicationController.rb in Resources */ = {isa = PBXBuildFile; fileRef = D696171B0E603DF00011C2FA /* ApplicationController.rb */; };
+		D69617620E603E9C0011C2FA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69617610E603E9C0011C2FA /* Security.framework */; };
+		D69617640E603EAA0011C2FA /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69617630E603EAA0011C2FA /* Carbon.framework */; };
+		D696176D0E603FBE0011C2FA /* HoptoadInfoSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = D696176C0E603FBE0011C2FA /* HoptoadInfoSheet.xib */; };
+		D69617730E60417D0011C2FA /* HoptoadInfoSheetController.rb in Resources */ = {isa = PBXBuildFile; fileRef = D696176B0E603F270011C2FA /* HoptoadInfoSheetController.rb */; };
+		D69617A70E604B010011C2FA /* HoptoadInfo.rb in Resources */ = {isa = PBXBuildFile; fileRef = D69617A60E604B010011C2FA /* HoptoadInfo.rb */; };
+		D6E4F6E30E5F3CD70050ACB4 /* HMBlkAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E4F6E20E5F3CD70050ACB4 /* HMBlkAppKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D62BD9E50E5E113500119FB7 /* HMBlkAppKit.framework in Copy Frameworks */,
+				D68AEF390E5F3D210015C34A /* HMBlkAppKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,13 +55,24 @@
 		4DDCA7110ACC9A6100E082CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDCA7120ACC9A6100E082CE /* Croak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Croak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62BD9670E5D9CAB00119FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D62BD9B50E5E0D1E00119FB7 /* HMBlkAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HMBlkAppKit.framework; path = 3rdParty/HMBlkAppKit.framework; sourceTree = "<group>"; };
 		D62BDA450E5E173200119FB7 /* CroakController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CroakController.rb; path = controllers/CroakController.rb; sourceTree = "<group>"; };
 		D62BDAB80E5E1B8800119FB7 /* CroakCell.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CroakCell.rb; path = views/CroakCell.rb; sourceTree = "<group>"; };
 		D62BDB760E5E32DB00119FB7 /* Error.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = Error.rb; path = Models/Error.rb; sourceTree = "<group>"; };
 		D6436F000E5E5F4D0018B508 /* green_frog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = green_frog.gif; path = Resources/green_frog.gif; sourceTree = "<group>"; };
 		D6436F010E5E5F4D0018B508 /* grey_frog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = grey_frog.gif; path = Resources/grey_frog.gif; sourceTree = "<group>"; };
 		D6436F130E5EE0380018B508 /* WindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = WindowController.rb; path = controllers/WindowController.rb; sourceTree = "<group>"; };
+		D69616C20E603AEA0011C2FA /* active_resource_instance_authentication */ = {isa = PBXFileReference; lastKnownFileType = folder; name = active_resource_instance_authentication; path = 3rdParty/active_resource_instance_authentication; sourceTree = "<group>"; };
+		D69617120E603D3D0011C2FA /* EMKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMKeychainItem.h; path = 3rdParty/EMKeychainItem.h; sourceTree = "<group>"; };
+		D69617130E603D3D0011C2FA /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMKeychainItem.m; path = 3rdParty/EMKeychainItem.m; sourceTree = "<group>"; };
+		D69617140E603D3D0011C2FA /* EMKeychainProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMKeychainProxy.h; path = 3rdParty/EMKeychainProxy.h; sourceTree = "<group>"; };
+		D69617150E603D3D0011C2FA /* EMKeychainProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMKeychainProxy.m; path = 3rdParty/EMKeychainProxy.m; sourceTree = "<group>"; };
+		D696171B0E603DF00011C2FA /* ApplicationController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = ApplicationController.rb; path = controllers/ApplicationController.rb; sourceTree = "<group>"; };
+		D69617610E603E9C0011C2FA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D69617630E603EAA0011C2FA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		D696176B0E603F270011C2FA /* HoptoadInfoSheetController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = HoptoadInfoSheetController.rb; path = controllers/HoptoadInfoSheetController.rb; sourceTree = "<group>"; };
+		D696176C0E603FBE0011C2FA /* HoptoadInfoSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HoptoadInfoSheet.xib; path = Resources/HoptoadInfoSheet.xib; sourceTree = "<group>"; };
+		D69617A60E604B010011C2FA /* HoptoadInfo.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = HoptoadInfo.rb; path = models/HoptoadInfo.rb; sourceTree = "<group>"; };
+		D6E4F6E20E5F3CD70050ACB4 /* HMBlkAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HMBlkAppKit.framework; path = 3rdParty/HMBlkAppKit.framework; sourceTree = "<group>"; };
 		E8F5E24E03AEB6EC03A81C6F /* RubyCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RubyCocoa.framework; path = /System/Library/Frameworks/RubyCocoa.framework; sourceTree = "<absolute>"; };
 		E8F5E25803AEB7C803A81C6F /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +84,9 @@
 			files = (
 				4DDCA70C0ACC9A6100E082CE /* Cocoa.framework in Frameworks */,
 				4DDCA70D0ACC9A6100E082CE /* RubyCocoa.framework in Frameworks */,
-				D62BD9B60E5E0D1E00119FB7 /* HMBlkAppKit.framework in Frameworks */,
+				D6E4F6E30E5F3CD70050ACB4 /* HMBlkAppKit.framework in Frameworks */,
+				D69617620E603E9C0011C2FA /* Security.framework in Frameworks */,
+				D69617640E603EAA0011C2FA /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +106,8 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D69617630E603EAA0011C2FA /* Carbon.framework */,
+				D69617610E603E9C0011C2FA /* Security.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				E8F5E24E03AEB6EC03A81C6F /* RubyCocoa.framework */,
 			);
@@ -93,7 +117,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D62BD9B50E5E0D1E00119FB7 /* HMBlkAppKit.framework */,
+				D6E4F6E20E5F3CD70050ACB4 /* HMBlkAppKit.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 			);
@@ -138,6 +162,7 @@
 				D6436F010E5E5F4D0018B508 /* grey_frog.gif */,
 				D62BD9660E5D9CAB00119FB7 /* MainMenu.xib */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				D696176C0E603FBE0011C2FA /* HoptoadInfoSheet.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -154,6 +179,11 @@
 		D62BDA880E5E19E800119FB7 /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				D69617120E603D3D0011C2FA /* EMKeychainItem.h */,
+				D69617130E603D3D0011C2FA /* EMKeychainItem.m */,
+				D69617140E603D3D0011C2FA /* EMKeychainProxy.h */,
+				D69617150E603D3D0011C2FA /* EMKeychainProxy.m */,
+				D69616C20E603AEA0011C2FA /* active_resource_instance_authentication */,
 			);
 			name = 3rdParty;
 			sourceTree = "<group>";
@@ -169,8 +199,10 @@
 		D62BDAB70E5E1B5D00119FB7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D696171B0E603DF00011C2FA /* ApplicationController.rb */,
 				D62BDA450E5E173200119FB7 /* CroakController.rb */,
 				D6436F130E5EE0380018B508 /* WindowController.rb */,
+				D696176B0E603F270011C2FA /* HoptoadInfoSheetController.rb */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -178,6 +210,7 @@
 		D62BDB750E5E328600119FB7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D69617A60E604B010011C2FA /* HoptoadInfo.rb */,
 				D62BDB760E5E32DB00119FB7 /* Error.rb */,
 			);
 			name = Models;
@@ -238,6 +271,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D69617A70E604B010011C2FA /* HoptoadInfo.rb in Resources */,
+				D69617730E60417D0011C2FA /* HoptoadInfoSheetController.rb in Resources */,
+				D69616CE0E603AEA0011C2FA /* active_resource_instance_authentication in Resources */,
 				4DDCA7070ACC9A6100E082CE /* InfoPlist.strings in Resources */,
 				4DDCA7080ACC9A6100E082CE /* rb_main.rb in Resources */,
 				D62BD9680E5D9CAB00119FB7 /* MainMenu.xib in Resources */,
@@ -247,6 +283,8 @@
 				D6436F020E5E5F4D0018B508 /* green_frog.gif in Resources */,
 				D6436F030E5E5F4D0018B508 /* grey_frog.gif in Resources */,
 				D6436F140E5EE0380018B508 /* WindowController.rb in Resources */,
+				D696171C0E603DF00011C2FA /* ApplicationController.rb in Resources */,
+				D696176D0E603FBE0011C2FA /* HoptoadInfoSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DDCA70A0ACC9A6100E082CE /* main.m in Sources */,
+				D69617170E603D3D0011C2FA /* EMKeychainItem.m in Sources */,
+				D69617190E603D3D0011C2FA /* EMKeychainProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +355,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/3rdParty\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -338,6 +379,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/3rdParty\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;

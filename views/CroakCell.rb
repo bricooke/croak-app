@@ -5,8 +5,6 @@
 #  Created by Brian Cooke on 8/21/08.
 #  Copyright (c) 2008 roobasoft, LLC. All rights reserved.
 #
-require 'active_support'
-
 class CroakCell < NSTextFieldCell
   def drawInteriorWithFrame_inView(bounds, controlView)
     setFont(NSFont.systemFontOfSize(12))

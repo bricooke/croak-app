@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 #import <RubyCocoa/RBRuntime.h>
-#import <HMBlkAppKit/HMBlkAppKit.h>
 
 int main(int argc, const char *argv[])
 {

@@ -1,0 +1,18 @@
+Dapper Resource: ActiveResource Instance Authentication
+=======================================================
+
+Dapper Resource rewires ActiveResource so that you can pass find methods arbitrary
+connection objects, and add arbitrary connection objects to ARes model instances,
+which will then be used in save operations.
+
+Dapper Resource adds new functionality to ARes but leaves the original system in
+place. Its primary use case is Web services using Basic HTTP Authentication on a
+user-by-user basis, where each user of the Rails app maps directly to a user in the
+Web service's authentication system. In a situation like that, you can't get much
+done with class-level specification of username and password; Dapper Resource to
+the rescue.
+
+For detailed examples of usage, check out the spec directory.
+
+
+Copyright (c) 2008 Giles Bowkett, released under the MIT license
