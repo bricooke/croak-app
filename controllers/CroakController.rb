@@ -10,17 +10,16 @@ class CroakController < NSObject
   
   def refresh_errors
     Thread.new do
+      go_green = false
       @progress.startAnimation(self)
       HoptoadInfo.recent_errors.each do |e|
         if @errors_array_controller.arrangedObjects.indexOfObject(e.to_hash) == NSNotFound
           @errors_array_controller.insertObject_atArrangedObjectIndex(e.to_hash, 0)
-          @window_controller.go_green(self)
+          go_green = true
         end
       end
-      @progress.stopAnimation(self)
+      @window_controller.showErrors
+      @window_controller.go_green(self) if go_green
     end
-  end
-  
-  def table_view_clicked(sender)
   end
 end

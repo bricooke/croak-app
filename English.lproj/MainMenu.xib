@@ -744,7 +744,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSScrollView" id="861180999">
 							<reference key="NSNextResponder" ref="1067966219"/>
-							<int key="NSvFlags">274</int>
+							<int key="NSvFlags">-2147483374</int>
 							<object class="NSMutableArray" key="NSSubviews">
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSClipView" id="824481424">
@@ -801,7 +801,7 @@
 															<int key="NSColorSpace">6</int>
 															<string key="NSCatalogName">System</string>
 															<string key="NSColorName">controlBackgroundColor</string>
-															<object class="NSColor" key="NSColor">
+															<object class="NSColor" key="NSColor" id="297558764">
 																<int key="NSColorSpace">3</int>
 																<bytes key="NSWhite">MC42NjY2NjY2OQA</bytes>
 															</object>
@@ -878,13 +878,41 @@
 						</object>
 						<object class="NSProgressIndicator" id="957285285">
 							<reference key="NSNextResponder" ref="1067966219"/>
-							<int key="NSvFlags">5415</int>
+							<int key="NSvFlags">5391</int>
 							<object class="NSPSMatrix" key="NSDrawMatrix"/>
-							<string key="NSFrame">{{18, 13}, {341, 12}}</string>
+							<string key="NSFrame">{{18, 200}, {341, 12}}</string>
 							<reference key="NSSuperview" ref="1067966219"/>
 							<int key="NSpiFlags">16650</int>
 							<double key="NSMinValue">2.000000e+01</double>
 							<double key="NSMaxValue">1.000000e+02</double>
+						</object>
+						<object class="NSTextField" id="642540973">
+							<reference key="NSNextResponder" ref="1067966219"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrame">{{17, 220}, {343, 17}}</string>
+							<reference key="NSSuperview" ref="1067966219"/>
+							<bool key="NSEnabled">YES</bool>
+							<object class="NSTextFieldCell" key="NSCell" id="136190682">
+								<int key="NSCellFlags">68288064</int>
+								<int key="NSCellFlags2">272630784</int>
+								<string key="NSContents">Loading unresolved errors...</string>
+								<object class="NSFont" key="NSSupport">
+									<string key="NSName">LucidaGrande</string>
+									<double key="NSSize">1.300000e+01</double>
+									<int key="NSfFlags">1044</int>
+								</object>
+								<reference key="NSControlView" ref="642540973"/>
+								<object class="NSColor" key="NSBackgroundColor">
+									<int key="NSColorSpace">6</int>
+									<string key="NSCatalogName">System</string>
+									<string key="NSColorName">controlColor</string>
+									<reference key="NSColor" ref="297558764"/>
+								</object>
+								<object class="NSColor" key="NSTextColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC45NTY4NjI3NSAwLjk1Njg2Mjc1IDAuOTU2ODYyNzUAA</bytes>
+								</object>
+							</object>
 						</object>
 					</object>
 					<string key="NSFrameSize">{377, 374}</string>
@@ -1252,14 +1280,6 @@
 					<int key="connectionID">427</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">table_view_clicked:</string>
-						<reference key="source" ref="64969789"/>
-						<reference key="destination" ref="816423141"/>
-					</object>
-					<int key="connectionID">429</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">window</string>
 						<reference key="source" ref="822390534"/>
@@ -1314,6 +1334,38 @@
 						<reference key="destination" ref="957285285"/>
 					</object>
 					<int key="connectionID">442</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">errors_scroll_view</string>
+						<reference key="source" ref="822390534"/>
+						<reference key="destination" ref="861180999"/>
+					</object>
+					<int key="connectionID">448</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">loading_text</string>
+						<reference key="source" ref="822390534"/>
+						<reference key="destination" ref="642540973"/>
+					</object>
+					<int key="connectionID">449</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">progress</string>
+						<reference key="source" ref="822390534"/>
+						<reference key="destination" ref="957285285"/>
+					</object>
+					<int key="connectionID">450</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">errors_table_view</string>
+						<reference key="source" ref="822390534"/>
+						<reference key="destination" ref="816423141"/>
+					</object>
+					<int key="connectionID">451</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1906,6 +1958,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="861180999"/>
 							<reference ref="957285285"/>
+							<reference ref="642540973"/>
 						</object>
 						<reference key="parent" ref="84891084"/>
 					</object>
@@ -1982,6 +2035,20 @@
 						<int key="objectID">441</int>
 						<reference key="object" ref="957285285"/>
 						<reference key="parent" ref="1067966219"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">443</int>
+						<reference key="object" ref="642540973"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="136190682"/>
+						</object>
+						<reference key="parent" ref="1067966219"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">444</int>
+						<reference key="object" ref="136190682"/>
+						<reference key="parent" ref="642540973"/>
 					</object>
 				</object>
 			</object>
@@ -2147,6 +2214,8 @@
 					<string>435.IBPluginDependency</string>
 					<string>441.CustomClassName</string>
 					<string>441.IBPluginDependency</string>
+					<string>443.IBPluginDependency</string>
+					<string>444.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.ImportedFromIB2</string>
 					<string>56.IBPluginDependency</string>
@@ -2345,6 +2414,8 @@
 					<string>HMBlkProgressIndicator</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
@@ -2402,7 +2473,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">442</int>
+			<int key="maxID">451</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2467,10 +2538,18 @@
 						<object class="NSMutableArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>croak_controller</string>
+							<string>errors_scroll_view</string>
+							<string>errors_table_view</string>
+							<string>loading_text</string>
+							<string>progress</string>
 							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
