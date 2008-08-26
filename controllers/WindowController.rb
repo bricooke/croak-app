@@ -33,7 +33,7 @@ class WindowController < NSObject
   
   def go_green(sender)
     NSSound.soundNamed(NSUserDefaults.standardUserDefaults.stringForKey(ApplicationController::PREF_SOUND)).play unless NSUserDefaults.standardUserDefaults.boolForKey(ApplicationController::PREF_SHOULD_PLAY_SOUND) == false
-    @status_item.setImage(NSImage.imageNamed("green_frog"))
+    @status_item.setImage(NSImage.imageNamed("green_frog")) unless @window.isVisible
   end
   
   def showErrors

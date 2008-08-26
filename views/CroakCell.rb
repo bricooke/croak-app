@@ -32,7 +32,7 @@ class CroakCell < NSTextFieldCell
     end
     
     bounds.y += bounds.height - 16
-    attrString = NSAttributedString.alloc.initWithString_attributes(error[:last_notice_at] + " (#{error[:notices_count]})", attrsDictionary)
+    attrString = NSAttributedString.alloc.initWithString_attributes(error[:fuzzy_last_notice_at] + " (#{error[:notices_count]})", attrsDictionary)
     attrString.drawInRect(titleRect)
   end
 end

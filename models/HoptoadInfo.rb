@@ -24,7 +24,7 @@ class HoptoadInfo
     @@hoptoads.each do |h|
       e += h.recent_errors
     end
-    e
+    e.sort_by(&:last_notice_at)
   end
   
   def initialize(d, a)
