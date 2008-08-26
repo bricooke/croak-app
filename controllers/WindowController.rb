@@ -16,6 +16,9 @@ class WindowController < NSObject
     @status_item.setImage(NSImage.imageNamed("grey_frog"))
     @status_item.setTarget(self)
     @status_item.setAction(:toggle_croaks)
+    
+    @errors_table_view.setTarget(self)
+    @errors_table_view.setDoubleAction(:viewErrorOnWeb)
   end
   
   def toggle_croaks(sender)
@@ -41,5 +44,10 @@ class WindowController < NSObject
     @loading_text.setHidden(true)
     
     @window.makeFirstResponder(@errors_table_view)
+  end
+  
+  def viewErrorOnWeb(sender)
+    err = @croak_controller.error(@errors_table_view.selectedRow)
+    NSWorkspace.sharedWorkspace.openURL(NSURL.URLWithString("http://makalumedia.hoptoadapp.com/errors/#{err[:id]}"));
   end
 end

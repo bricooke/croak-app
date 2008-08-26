@@ -22,4 +22,8 @@ class CroakController < NSObject
       @window_controller.go_green(self) if go_green
     end
   end
+  
+  def error(index)
+    @errors_array_controller.arrangedObjects.objectAtIndex(index)
+  end
 end

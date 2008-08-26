@@ -16,6 +16,7 @@
 		D62812540E63B7E600FBEDF4 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62812530E63B7E600FBEDF4 /* Preferences.xib */; };
 		D628125A0E63B91300FBEDF4 /* NSButton+TextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D62812580E63B91300FBEDF4 /* NSButton+TextColor.m */; };
 		D628125C0E63B95400FBEDF4 /* PreferencesController.rb in Resources */ = {isa = PBXBuildFile; fileRef = D628125B0E63B95400FBEDF4 /* PreferencesController.rb */; };
+		D62813230E63C9B900FBEDF4 /* CroakTableView.rb in Resources */ = {isa = PBXBuildFile; fileRef = D62813220E63C9B900FBEDF4 /* CroakTableView.rb */; };
 		D62BD9680E5D9CAB00119FB7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62BD9660E5D9CAB00119FB7 /* MainMenu.xib */; };
 		D62BDA460E5E173200119FB7 /* CroakController.rb in Resources */ = {isa = PBXBuildFile; fileRef = D62BDA450E5E173200119FB7 /* CroakController.rb */; };
 		D62BDAB90E5E1B8800119FB7 /* CroakCell.rb in Resources */ = {isa = PBXBuildFile; fileRef = D62BDAB80E5E1B8800119FB7 /* CroakCell.rb */; };
@@ -64,6 +65,7 @@
 		D62812570E63B91300FBEDF4 /* NSButton+TextColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSButton+TextColor.h"; path = "3rdParty/NSButton+TextColor.h"; sourceTree = "<group>"; };
 		D62812580E63B91300FBEDF4 /* NSButton+TextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSButton+TextColor.m"; path = "3rdParty/NSButton+TextColor.m"; sourceTree = "<group>"; };
 		D628125B0E63B95400FBEDF4 /* PreferencesController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = PreferencesController.rb; path = controllers/PreferencesController.rb; sourceTree = "<group>"; };
+		D62813220E63C9B900FBEDF4 /* CroakTableView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CroakTableView.rb; path = views/CroakTableView.rb; sourceTree = "<group>"; };
 		D62BD9670E5D9CAB00119FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D62BDA450E5E173200119FB7 /* CroakController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CroakController.rb; path = controllers/CroakController.rb; sourceTree = "<group>"; };
 		D62BDAB80E5E1B8800119FB7 /* CroakCell.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CroakCell.rb; path = views/CroakCell.rb; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		D62BDAB60E5E1B5400119FB7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D62813220E63C9B900FBEDF4 /* CroakTableView.rb */,
 				D62BDAB80E5E1B8800119FB7 /* CroakCell.rb */,
 			);
 			name = Views;
@@ -303,6 +306,7 @@
 				D696176D0E603FBE0011C2FA /* HoptoadInfoSheet.xib in Resources */,
 				D62812540E63B7E600FBEDF4 /* Preferences.xib in Resources */,
 				D628125C0E63B95400FBEDF4 /* PreferencesController.rb in Resources */,
+				D62813230E63C9B900FBEDF4 /* CroakTableView.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
