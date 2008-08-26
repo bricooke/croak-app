@@ -9,6 +9,7 @@
 class ApplicationController < NSObject
   PREF_SHOULD_PLAY_SOUND = "shouldPlaySound"
   PREF_SOUND = "sound"
+  PREF_REFRESH_SECONDS = "refreshInSeconds"
   
   ib_outlet :window, :croak_controller
   
@@ -16,6 +17,7 @@ class ApplicationController < NSObject
     defaults = NSMutableDictionary.dictionary
     defaults.setObject_forKey(NSNumber.numberWithBool(true), PREF_SHOULD_PLAY_SOUND)
     defaults.setObject_forKey("Frog", PREF_SOUND)
+    defaults.setObject_forKey(NSNumber.numberWithInt(300), PREF_REFRESH_SECONDS)
     NSUserDefaults.standardUserDefaults.registerDefaults(defaults)
   end
   
@@ -33,18 +35,26 @@ class ApplicationController < NSObject
         "hoptoadSheetDidEndSelector",
         nil)
     else
-      @croak_controller.refresh_errors
+      show_errors
     end
   end
   
   def hoptoadSheetDidEndSelector(sheet, returnCode, context)
     return if returnCode == NSCancelButton
+    show_errors
+  end
+  
+  def show_errors
+    Thread.new do
+      while true
+        @croak_controller.refresh_errors
+        sleep NSUserDefaults.standardUserDefaults.objectForKey(ApplicationController::PREF_REFRESH_SECONDS).integerValue
+      end
+    end
   end
   
   ib_action :show_preferences do |sender|
     @preferences_controller ||= PreferencesController.alloc.init
     @preferences_controller.showWindow(self)
   end
-  
-  
 end

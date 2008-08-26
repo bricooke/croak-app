@@ -32,7 +32,13 @@ class CroakCell < NSTextFieldCell
     end
     
     bounds.y += bounds.height - 16
-    attrString = NSAttributedString.alloc.initWithString_attributes(error[:fuzzy_last_notice_at] + " (#{error[:notices_count]})", attrsDictionary)
+    
+    dateFormatter = NSDateFormatter.alloc.init
+    dateFormatter.setDateStyle(NSDateFormatterMediumStyle)
+    dateFormatter.setTimeStyle(NSDateFormatterMediumStyle)
+    formatted_date = dateFormatter.stringFromDate(error[:last_notice_at]).to_s
+    
+    attrString = NSAttributedString.alloc.initWithString_attributes(Error.fuzzy_last_notice_at(Time.parse(formatted_date)) + " (#{error[:notices_count]})", attrsDictionary)
     attrString.drawInRect(titleRect)
   end
 end

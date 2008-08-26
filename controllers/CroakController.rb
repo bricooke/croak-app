@@ -8,19 +8,19 @@
 class CroakController < NSObject
   ib_outlet :errors_array_controller, :window_controller, :progress
   
-  def refresh_errors
-    Thread.new do
-      go_green = false
-      @progress.startAnimation(self)
-      HoptoadInfo.recent_errors.each do |e|
-        if @errors_array_controller.arrangedObjects.indexOfObject(e.to_hash) == NSNotFound
-          @errors_array_controller.insertObject_atArrangedObjectIndex(e.to_hash, 0)
-          go_green = true
-        end
-      end
-      @window_controller.showErrors
-      @window_controller.go_green(self) if go_green
+  def refresh_errors    
+    go_green = false
+    @progress.startAnimation(self)
+    @errors_array_controller.content.removeAllObjects
+    
+    previous_errors = @recent_errors || []
+    @recent_errors = HoptoadInfo.recent_errors
+    @recent_errors.each do |e|
+      go_green = true if !previous_errors.include?(e)
+      @errors_array_controller.insertObject_atArrangedObjectIndex(e.to_hash, 0)
     end
+    @window_controller.showErrors
+    @window_controller.go_green(self) if go_green
   end
   
   def error(index)

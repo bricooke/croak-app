@@ -18,12 +18,13 @@ class HoptoadInfo
   end
   
   def self.recent_errors
-    @@hoptoads ||= self.find
+    @@hoptoads = self.find if @@hoptoads.nil? || @@hoptoads.empty?
     
     e = []
     @@hoptoads.each do |h|
       e += h.recent_errors
     end
+    
     e.sort_by(&:last_notice_at)
   end
   

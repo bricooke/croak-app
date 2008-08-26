@@ -13,8 +13,8 @@ require File.dirname(__FILE__) + "/active_resource_instance_authentication/init.
 class Error < ActiveResource::Base
   self.site = ""
   
-  def fuzzy_last_notice_at
-      duration = Duration.new(Time.now - last_notice_at)
+  def self.fuzzy_last_notice_at(time)
+    duration = Duration.new(Time.now - time)
 
     w = "week"
     w = w.pluralize if duration.weeks != 1
@@ -40,7 +40,6 @@ class Error < ActiveResource::Base
     {
       :id => id,
       :error_message => error_message,
-      :fuzzy_last_notice_at => fuzzy_last_notice_at,
       :last_notice_at => last_notice_at,
       :notices_count => notices_count
     }
