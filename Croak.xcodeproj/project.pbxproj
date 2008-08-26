@@ -13,6 +13,9 @@
 		4DDCA70C0ACC9A6100E082CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		4DDCA70D0ACC9A6100E082CE /* RubyCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E24E03AEB6EC03A81C6F /* RubyCocoa.framework */; };
 		D628123A0E62DCAE00FBEDF4 /* NSSound+SoundList.m in Sources */ = {isa = PBXBuildFile; fileRef = D62812380E62DCAE00FBEDF4 /* NSSound+SoundList.m */; };
+		D62812540E63B7E600FBEDF4 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62812530E63B7E600FBEDF4 /* Preferences.xib */; };
+		D628125A0E63B91300FBEDF4 /* NSButton+TextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D62812580E63B91300FBEDF4 /* NSButton+TextColor.m */; };
+		D628125C0E63B95400FBEDF4 /* PreferencesController.rb in Resources */ = {isa = PBXBuildFile; fileRef = D628125B0E63B95400FBEDF4 /* PreferencesController.rb */; };
 		D62BD9680E5D9CAB00119FB7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62BD9660E5D9CAB00119FB7 /* MainMenu.xib */; };
 		D62BDA460E5E173200119FB7 /* CroakController.rb in Resources */ = {isa = PBXBuildFile; fileRef = D62BDA450E5E173200119FB7 /* CroakController.rb */; };
 		D62BDAB90E5E1B8800119FB7 /* CroakCell.rb in Resources */ = {isa = PBXBuildFile; fileRef = D62BDAB80E5E1B8800119FB7 /* CroakCell.rb */; };
@@ -57,6 +60,10 @@
 		4DDCA7120ACC9A6100E082CE /* Croak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Croak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62812370E62DCAE00FBEDF4 /* NSSound+SoundList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSound+SoundList.h"; path = "3rdParty/NSSound+SoundList.h"; sourceTree = "<group>"; };
 		D62812380E62DCAE00FBEDF4 /* NSSound+SoundList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSound+SoundList.m"; path = "3rdParty/NSSound+SoundList.m"; sourceTree = "<group>"; };
+		D62812530E63B7E600FBEDF4 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Preferences.xib; path = Resources/Preferences.xib; sourceTree = "<group>"; };
+		D62812570E63B91300FBEDF4 /* NSButton+TextColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSButton+TextColor.h"; path = "3rdParty/NSButton+TextColor.h"; sourceTree = "<group>"; };
+		D62812580E63B91300FBEDF4 /* NSButton+TextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSButton+TextColor.m"; path = "3rdParty/NSButton+TextColor.m"; sourceTree = "<group>"; };
+		D628125B0E63B95400FBEDF4 /* PreferencesController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = PreferencesController.rb; path = controllers/PreferencesController.rb; sourceTree = "<group>"; };
 		D62BD9670E5D9CAB00119FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D62BDA450E5E173200119FB7 /* CroakController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CroakController.rb; path = controllers/CroakController.rb; sourceTree = "<group>"; };
 		D62BDAB80E5E1B8800119FB7 /* CroakCell.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CroakCell.rb; path = views/CroakCell.rb; sourceTree = "<group>"; };
@@ -166,6 +173,7 @@
 				D62BD9660E5D9CAB00119FB7 /* MainMenu.xib */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				D696176C0E603FBE0011C2FA /* HoptoadInfoSheet.xib */,
+				D62812530E63B7E600FBEDF4 /* Preferences.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -189,6 +197,8 @@
 				D69617140E603D3D0011C2FA /* EMKeychainProxy.h */,
 				D69617150E603D3D0011C2FA /* EMKeychainProxy.m */,
 				D69616C20E603AEA0011C2FA /* active_resource_instance_authentication */,
+				D62812570E63B91300FBEDF4 /* NSButton+TextColor.h */,
+				D62812580E63B91300FBEDF4 /* NSButton+TextColor.m */,
 			);
 			name = 3rdParty;
 			sourceTree = "<group>";
@@ -208,6 +218,7 @@
 				D62BDA450E5E173200119FB7 /* CroakController.rb */,
 				D6436F130E5EE0380018B508 /* WindowController.rb */,
 				D696176B0E603F270011C2FA /* HoptoadInfoSheetController.rb */,
+				D628125B0E63B95400FBEDF4 /* PreferencesController.rb */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -290,6 +301,8 @@
 				D6436F140E5EE0380018B508 /* WindowController.rb in Resources */,
 				D696171C0E603DF00011C2FA /* ApplicationController.rb in Resources */,
 				D696176D0E603FBE0011C2FA /* HoptoadInfoSheet.xib in Resources */,
+				D62812540E63B7E600FBEDF4 /* Preferences.xib in Resources */,
+				D628125C0E63B95400FBEDF4 /* PreferencesController.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +317,7 @@
 				D69617170E603D3D0011C2FA /* EMKeychainItem.m in Sources */,
 				D69617190E603D3D0011C2FA /* EMKeychainProxy.m in Sources */,
 				D628123A0E62DCAE00FBEDF4 /* NSSound+SoundList.m in Sources */,
+				D628125A0E63B91300FBEDF4 /* NSButton+TextColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

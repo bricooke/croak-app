@@ -7,7 +7,17 @@
 #
 
 class ApplicationController < NSObject
+  PREF_SHOULD_PLAY_SOUND = "shouldPlaySound"
+  PREF_SOUND = "sound"
+  
   ib_outlet :window, :croak_controller
+  
+  def initialize
+    defaults = NSMutableDictionary.dictionary
+    defaults.setObject_forKey(NSNumber.numberWithBool(true), PREF_SHOULD_PLAY_SOUND)
+    defaults.setObject_forKey("Frog", PREF_SOUND)
+    NSUserDefaults.standardUserDefaults.registerDefaults(defaults)
+  end
   
   def applicationDidFinishLaunching(notification)
     domains = HoptoadInfo.find
@@ -30,4 +40,11 @@ class ApplicationController < NSObject
   def hoptoadSheetDidEndSelector(sheet, returnCode, context)
     return if returnCode == NSCancelButton
   end
+  
+  ib_action :show_preferences do |sender|
+    @preferences_controller ||= PreferencesController.alloc.init
+    @preferences_controller.showWindow(self)
+  end
+  
+  
 end

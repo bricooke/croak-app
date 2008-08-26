@@ -9,7 +9,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="395"/>
-			<integer value="29"/>
+			<integer value="57"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -801,7 +801,7 @@
 															<int key="NSColorSpace">6</int>
 															<string key="NSCatalogName">System</string>
 															<string key="NSColorName">controlBackgroundColor</string>
-															<object class="NSColor" key="NSColor" id="297558764">
+															<object class="NSColor" key="NSColor" id="941158021">
 																<int key="NSColorSpace">3</int>
 																<bytes key="NSWhite">MC42NjY2NjY2OQA</bytes>
 															</object>
@@ -886,13 +886,13 @@
 							<double key="NSMinValue">2.000000e+01</double>
 							<double key="NSMaxValue">1.000000e+02</double>
 						</object>
-						<object class="NSTextField" id="642540973">
+						<object class="NSTextField" id="338484677">
 							<reference key="NSNextResponder" ref="1067966219"/>
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{17, 220}, {343, 17}}</string>
 							<reference key="NSSuperview" ref="1067966219"/>
 							<bool key="NSEnabled">YES</bool>
-							<object class="NSTextFieldCell" key="NSCell" id="136190682">
+							<object class="NSTextFieldCell" key="NSCell" id="159075641">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
 								<string key="NSContents">Loading unresolved errors...</string>
@@ -901,12 +901,12 @@
 									<double key="NSSize">1.300000e+01</double>
 									<int key="NSfFlags">1044</int>
 								</object>
-								<reference key="NSControlView" ref="642540973"/>
+								<reference key="NSControlView" ref="338484677"/>
 								<object class="NSColor" key="NSBackgroundColor">
 									<int key="NSColorSpace">6</int>
 									<string key="NSCatalogName">System</string>
 									<string key="NSColorName">controlColor</string>
-									<reference key="NSColor" ref="297558764"/>
+									<reference key="NSColor" ref="941158021"/>
 								</object>
 								<object class="NSColor" key="NSTextColor">
 									<int key="NSColorSpace">1</int>
@@ -1347,7 +1347,7 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">loading_text</string>
 						<reference key="source" ref="822390534"/>
-						<reference key="destination" ref="642540973"/>
+						<reference key="destination" ref="338484677"/>
 					</object>
 					<int key="connectionID">449</int>
 				</object>
@@ -1366,6 +1366,14 @@
 						<reference key="destination" ref="816423141"/>
 					</object>
 					<int key="connectionID">451</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">show_preferences:</string>
+						<reference key="source" ref="860734629"/>
+						<reference key="destination" ref="609285721"/>
+					</object>
+					<int key="connectionID">453</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1958,7 +1966,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="861180999"/>
 							<reference ref="957285285"/>
-							<reference ref="642540973"/>
+							<reference ref="338484677"/>
 						</object>
 						<reference key="parent" ref="84891084"/>
 					</object>
@@ -2038,17 +2046,17 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">443</int>
-						<reference key="object" ref="642540973"/>
+						<reference key="object" ref="338484677"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="136190682"/>
+							<reference ref="159075641"/>
 						</object>
 						<reference key="parent" ref="1067966219"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">444</int>
-						<reference key="object" ref="136190682"/>
-						<reference key="parent" ref="642540973"/>
+						<reference key="object" ref="159075641"/>
+						<reference key="parent" ref="338484677"/>
 					</object>
 				</object>
 			</object>
@@ -2473,7 +2481,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">451</int>
+			<int key="maxID">453</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2481,6 +2489,10 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">ApplicationController</string>
 					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">show_preferences:</string>
+						<string key="NS.object.0">id</string>
+					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSMutableArray" key="dict.sortedKeys">

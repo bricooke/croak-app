@@ -16,8 +16,6 @@ class WindowController < NSObject
     @status_item.setImage(NSImage.imageNamed("grey_frog"))
     @status_item.setTarget(self)
     @status_item.setAction(:toggle_croaks)
-    
-    @sound_name = NSUserDefaults.standardUserDefaults.stringForKey("alert_sound") || "Frog"
   end
   
   def toggle_croaks(sender)
@@ -31,7 +29,7 @@ class WindowController < NSObject
   end
   
   def go_green(sender)
-    NSSound.soundNamed(@sound_name).play unless @sound_name == "none"
+    NSSound.soundNamed(NSUserDefaults.standardUserDefaults.stringForKey(ApplicationController::PREF_SOUND)).play unless NSUserDefaults.standardUserDefaults.boolForKey(ApplicationController::PREF_SHOULD_PLAY_SOUND) == false
     @status_item.setImage(NSImage.imageNamed("green_frog"))
   end
   
