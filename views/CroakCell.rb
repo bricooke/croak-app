@@ -6,6 +6,7 @@
 #  Copyright (c) 2008 roobasoft, LLC. All rights reserved.
 #
 class CroakCell < NSTextFieldCell
+  # TODO: Cleanup into something sensible :P
   def drawInteriorWithFrame_inView(bounds, controlView)
     setFont(NSFont.systemFontOfSize(12))
     
@@ -92,5 +93,9 @@ class CroakCell < NSTextFieldCell
 
     # attrString = NSAttributedString.alloc.initWithString_attributes(error[:file] + ":" + error[:line_number], attrsDictionary)
     # attrString.drawInRect(titleRect)
+  end
+  
+  def expansionFrameWithFrame_inView(cellFrame, view)
+    NSZeroRect
   end
 end
