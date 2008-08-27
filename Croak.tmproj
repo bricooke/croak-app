@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>controllers/ApplicationController.rb</string>
+	<string>controllers/PreferencesController.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -28,7 +28,7 @@
 				<key>column</key>
 				<integer>5</integer>
 				<key>line</key>
-				<integer>48</integer>
+				<integer>58</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -40,9 +40,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>4</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>11</integer>
+				<integer>29</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -63,19 +63,49 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>controllers/WindowController.rb</key>
+		<key>controllers/PreferencesController.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>51</integer>
 				<key>line</key>
-				<integer>16</integer>
+				<integer>27</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+		</dict>
+		<key>controllers/WindowController.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>106</integer>
+				<key>line</key>
+				<integer>34</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>23</integer>
+				<key>line</key>
+				<integer>34</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>106</integer>
+				<key>line</key>
+				<integer>34</integer>
+			</dict>
 		</dict>
 		<key>main.m</key>
 		<dict>
@@ -96,9 +126,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>15</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>11</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -112,7 +142,7 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>48</integer>
+				<integer>22</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -133,6 +163,34 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>views/CroakCell.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>78</integer>
+				<key>line</key>
+				<integer>38</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>views/CroakTableView.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>46</integer>
+				<key>line</key>
+				<integer>3</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
@@ -141,13 +199,16 @@
 		<string>models/Error.rb</string>
 		<string>controllers/CroakController.rb</string>
 		<string>models/HoptoadInfo.rb</string>
+		<string>views/CroakCell.rb</string>
 		<string>controllers/WindowController.rb</string>
+		<string>views/CroakTableView.rb</string>
+		<string>controllers/PreferencesController.rb</string>
 		<string>controllers/ApplicationController.rb</string>
 		<string>controllers/HoptoadInfoSheetController.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{61, 37}, {795, 1141}}</string>
+	<string>{{0, 37}, {782, 1141}}</string>
 </dict>
 </plist>

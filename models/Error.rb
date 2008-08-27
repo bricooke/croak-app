@@ -40,8 +40,10 @@ class Error < ActiveResource::Base
     {
       :id => id,
       :error_message => error_message,
+      :file => File.basename(file),
+      :line_number => line_number.to_s,
       :last_notice_at => last_notice_at,
-      :notices_count => notices_count
+      :notices_count => notices_count,
     }
   end
 

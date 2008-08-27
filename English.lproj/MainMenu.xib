@@ -878,7 +878,7 @@
 						</object>
 						<object class="NSProgressIndicator" id="957285285">
 							<reference key="NSNextResponder" ref="1067966219"/>
-							<int key="NSvFlags">5391</int>
+							<int key="NSvFlags">5386</int>
 							<object class="NSPSMatrix" key="NSDrawMatrix"/>
 							<string key="NSFrame">{{18, 200}, {341, 12}}</string>
 							<reference key="NSSuperview" ref="1067966219"/>
