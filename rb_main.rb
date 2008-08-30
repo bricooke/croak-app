@@ -17,6 +17,11 @@ Thread.abort_on_exception = true
   OSX.ns_import class_name.to_sym
 end
 
+gemdir = OSX::NSBundle.mainBundle.resourcePath.stringByAppendingPathComponent("gems").fileSystemRepresentation
+Dir.glob(File.join("#{gemdir}/**/lib")).each do |path|
+  $:.unshift(gemdir, path)
+end
+
 def rb_main_init  
   path = OSX::NSBundle.mainBundle.resourcePath.fileSystemRepresentation
   rbfiles = Dir.entries(path).select {|x| /\.rb\z/ =~ x}

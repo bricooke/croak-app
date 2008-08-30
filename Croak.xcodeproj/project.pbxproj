@@ -12,6 +12,8 @@
 		4DDCA70A0ACC9A6100E082CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		4DDCA70C0ACC9A6100E082CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		4DDCA70D0ACC9A6100E082CE /* RubyCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E24E03AEB6EC03A81C6F /* RubyCocoa.framework */; };
+		D61EAC620E68F9DE005C6B07 /* Growl.rb in Resources */ = {isa = PBXBuildFile; fileRef = D61EAC610E68F9DE005C6B07 /* Growl.rb */; };
+		D61EAC8E0E68FDC9005C6B07 /* gems in Resources */ = {isa = PBXBuildFile; fileRef = D61EAC790E68FDC9005C6B07 /* gems */; };
 		D628123A0E62DCAE00FBEDF4 /* NSSound+SoundList.m in Sources */ = {isa = PBXBuildFile; fileRef = D62812380E62DCAE00FBEDF4 /* NSSound+SoundList.m */; };
 		D62812540E63B7E600FBEDF4 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62812530E63B7E600FBEDF4 /* Preferences.xib */; };
 		D628125A0E63B91300FBEDF4 /* NSButton+TextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D62812580E63B91300FBEDF4 /* NSButton+TextColor.m */; };
@@ -59,6 +61,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		4DDCA7110ACC9A6100E082CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDCA7120ACC9A6100E082CE /* Croak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Croak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61EAC610E68F9DE005C6B07 /* Growl.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = Growl.rb; path = 3rdParty/Growl.rb; sourceTree = "<group>"; };
+		D61EAC790E68FDC9005C6B07 /* gems */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gems; path = 3rdParty/gems; sourceTree = "<group>"; };
 		D62812370E62DCAE00FBEDF4 /* NSSound+SoundList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSound+SoundList.h"; path = "3rdParty/NSSound+SoundList.h"; sourceTree = "<group>"; };
 		D62812380E62DCAE00FBEDF4 /* NSSound+SoundList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSound+SoundList.m"; path = "3rdParty/NSSound+SoundList.m"; sourceTree = "<group>"; };
 		D62812530E63B7E600FBEDF4 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Preferences.xib; path = Resources/Preferences.xib; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 		D62BDA880E5E19E800119FB7 /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				D61EAC790E68FDC9005C6B07 /* gems */,
+				D61EAC610E68F9DE005C6B07 /* Growl.rb */,
 				D62812370E62DCAE00FBEDF4 /* NSSound+SoundList.h */,
 				D62812380E62DCAE00FBEDF4 /* NSSound+SoundList.m */,
 				D69617120E603D3D0011C2FA /* EMKeychainItem.h */,
@@ -290,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61EAC8E0E68FDC9005C6B07 /* gems in Resources */,
 				D69617A70E604B010011C2FA /* HoptoadInfo.rb in Resources */,
 				D69617730E60417D0011C2FA /* HoptoadInfoSheetController.rb in Resources */,
 				D69616CE0E603AEA0011C2FA /* active_resource_instance_authentication in Resources */,
@@ -307,6 +314,7 @@
 				D62812540E63B7E600FBEDF4 /* Preferences.xib in Resources */,
 				D628125C0E63B95400FBEDF4 /* PreferencesController.rb in Resources */,
 				D62813230E63C9B900FBEDF4 /* CroakTableView.rb in Resources */,
+				D61EAC620E68F9DE005C6B07 /* Growl.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

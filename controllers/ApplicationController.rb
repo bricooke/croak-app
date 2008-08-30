@@ -13,12 +13,18 @@ class ApplicationController < NSObject
   
   ib_outlet :window, :croak_controller
   
+  attr_accessor :growl
+  
   def initialize
     defaults = NSMutableDictionary.dictionary
     defaults.setObject_forKey(NSNumber.numberWithBool(true), PREF_SHOULD_PLAY_SOUND)
     defaults.setObject_forKey("Frog", PREF_SOUND)
     defaults.setObject_forKey(NSNumber.numberWithInt(300), PREF_REFRESH_SECONDS)
     NSUserDefaults.standardUserDefaults.registerDefaults(defaults)
+    
+    # register with growl (rawr)
+    @growl = GrowlNotifier.new('Croak',['New error'], nil, OSX::NSWorkspace.sharedWorkspace().iconForFileType_('unknown'))
+    @growl.register()
   end
   
   def applicationDidFinishLaunching(notification)
@@ -49,7 +55,7 @@ class ApplicationController < NSObject
       while true
         begin
           @croak_controller.refresh_errors
-          sleep   NSUserDefaults.standardUserDefaults.objectForKey( ApplicationController::PREF_REFRESH_SECONDS).integerValue
+          sleep NSUserDefaults.standardUserDefaults.objectForKey( ApplicationController::PREF_REFRESH_SECONDS).integerValue
         rescue Exception => e
           # todo: eat our own dog food and send this to hoptoad?
           # would have to confirm that with the user first.
