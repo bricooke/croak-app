@@ -39,9 +39,9 @@ class Error < ActiveResource::Base
   def to_hash
     {
       :id => id,
-      :error_message => error_message,
-      :file => File.basename(file),
-      :line_number => line_number.to_s,
+      :error_message => error_message || "",
+      :file => File.basename(file || ""),
+      :line_number => line_number.to_s || "",
       :last_notice_at => last_notice_at,
       :notices_count => notices_count,
     }

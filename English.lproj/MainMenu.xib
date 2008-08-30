@@ -9,7 +9,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="395"/>
-			<integer value="57"/>
+			<integer value="29"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -755,7 +755,7 @@
 										<object class="NSTableView" id="816423141">
 											<reference key="NSNextResponder" ref="824481424"/>
 											<int key="NSvFlags">256</int>
-											<string key="NSFrameSize">{362, 333}</string>
+											<string key="NSFrameSize">{362, 354}</string>
 											<reference key="NSSuperview" ref="824481424"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="_NSCornerView" key="NSCornerView">
@@ -837,7 +837,7 @@
 											<bool key="NSAllowsTypeSelect">YES</bool>
 										</object>
 									</object>
-									<string key="NSFrameSize">{362, 333}</string>
+									<string key="NSFrameSize">{362, 354}</string>
 									<reference key="NSSuperview" ref="861180999"/>
 									<reference key="NSNextKeyView" ref="816423141"/>
 									<reference key="NSDocView" ref="816423141"/>
@@ -850,7 +850,7 @@
 								<object class="NSScroller" id="760521325">
 									<reference key="NSNextResponder" ref="861180999"/>
 									<int key="NSvFlags">256</int>
-									<string key="NSFrame">{{362, 0}, {15, 333}}</string>
+									<string key="NSFrame">{{362, 0}, {15, 354}}</string>
 									<reference key="NSSuperview" ref="861180999"/>
 									<reference key="NSTarget" ref="861180999"/>
 									<string key="NSAction">_doScroller:</string>
@@ -867,7 +867,7 @@
 									<double key="NSPercent">9.904762e-01</double>
 								</object>
 							</object>
-							<string key="NSFrame">{{0, 41}, {377, 333}}</string>
+							<string key="NSFrame">{{0, 20}, {377, 354}}</string>
 							<reference key="NSSuperview" ref="1067966219"/>
 							<reference key="NSNextKeyView" ref="824481424"/>
 							<int key="NSsFlags">16</int>
@@ -2397,9 +2397,9 @@
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
-					<string>{{568, 718}, {377, 374}}</string>
+					<string>{{952, 785}, {377, 374}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{568, 718}, {377, 374}}</string>
+					<string>{{952, 785}, {377, 374}}</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>HMBlkScrollView</string>
@@ -2481,7 +2481,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">453</int>
+			<int key="maxID">454</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

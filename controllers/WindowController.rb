@@ -10,7 +10,7 @@ class WindowController < NSObject
   ib_outlet :window, :croak_controller
   ib_outlet :errors_scroll_view, :errors_table_view
   ib_outlet :progress, :loading_text
-
+  
   def awakeFromNib
     @status_item = NSStatusBar.systemStatusBar.statusItemWithLength(27.0)
     @status_item.setImage(NSImage.imageNamed("grey_frog"))

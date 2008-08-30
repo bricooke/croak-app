@@ -8,7 +8,7 @@
 class CroakController < NSObject
   ib_outlet :errors_array_controller, :window_controller, :progress
   
-  def refresh_errors    
+  def refresh_errors
     go_green = false
     @progress.startAnimation(self)
     @errors_array_controller.content.removeAllObjects

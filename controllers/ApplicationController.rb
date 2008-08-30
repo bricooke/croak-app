@@ -47,8 +47,15 @@ class ApplicationController < NSObject
   def show_errors
     Thread.new do
       while true
-        @croak_controller.refresh_errors
-        sleep NSUserDefaults.standardUserDefaults.objectForKey(ApplicationController::PREF_REFRESH_SECONDS).integerValue
+        begin
+          @croak_controller.refresh_errors
+          sleep   NSUserDefaults.standardUserDefaults.objectForKey( ApplicationController::PREF_REFRESH_SECONDS).integerValue
+        rescue Exception => e
+          # todo: eat our own dog food and send this to hoptoad?
+          # would have to confirm that with the user first.
+          NSLog("OH NOES!: #{e} - #{e.message}")
+          NSLog(e.backtrace.to_s)
+        end
       end
     end
   end
