@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="394"/>
+			<integer value="395"/>
 			<integer value="29"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
@@ -755,7 +755,7 @@
 										<object class="NSTableView" id="816423141">
 											<reference key="NSNextResponder" ref="824481424"/>
 											<int key="NSvFlags">256</int>
-											<string key="NSFrameSize">{362, 354}</string>
+											<string key="NSFrameSize">{377, 354}</string>
 											<reference key="NSSuperview" ref="824481424"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="_NSCornerView" key="NSCornerView">
@@ -766,7 +766,7 @@
 											<object class="NSMutableArray" key="NSTableColumns">
 												<bool key="EncodedWithXMLCoder">YES</bool>
 												<object class="NSTableColumn" id="828543154">
-													<double key="NSWidth">3.590000e+02</double>
+													<double key="NSWidth">3.740000e+02</double>
 													<double key="NSMinWidth">4.000000e+01</double>
 													<double key="NSMaxWidth">1.000000e+03</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -837,7 +837,7 @@
 											<bool key="NSAllowsTypeSelect">YES</bool>
 										</object>
 									</object>
-									<string key="NSFrameSize">{362, 354}</string>
+									<string key="NSFrameSize">{377, 354}</string>
 									<reference key="NSSuperview" ref="861180999"/>
 									<reference key="NSNextKeyView" ref="816423141"/>
 									<reference key="NSDocView" ref="816423141"/>
@@ -849,7 +849,7 @@
 								</object>
 								<object class="NSScroller" id="760521325">
 									<reference key="NSNextResponder" ref="861180999"/>
-									<int key="NSvFlags">256</int>
+									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{362, 0}, {15, 354}}</string>
 									<reference key="NSSuperview" ref="861180999"/>
 									<reference key="NSTarget" ref="861180999"/>
@@ -870,7 +870,7 @@
 							<string key="NSFrame">{{0, 20}, {377, 354}}</string>
 							<reference key="NSSuperview" ref="1067966219"/>
 							<reference key="NSNextKeyView" ref="824481424"/>
-							<int key="NSsFlags">16</int>
+							<int key="NSsFlags">528</int>
 							<reference key="NSVScroller" ref="760521325"/>
 							<reference key="NSHScroller" ref="925021171"/>
 							<reference key="NSContentView" ref="824481424"/>

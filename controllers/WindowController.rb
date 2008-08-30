@@ -49,5 +49,6 @@ class WindowController < NSObject
   def viewErrorOnWeb(sender)
     err = @croak_controller.error(@errors_table_view.selectedRow)
     NSWorkspace.sharedWorkspace.openURL(NSURL.URLWithString("http://makalumedia.hoptoadapp.com/errors/#{err[:id]}"));
+    toggle_croaks(self)
   end
 end
