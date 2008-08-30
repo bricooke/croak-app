@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="70"/>
+			<integer value="2"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -29,11 +29,12 @@
 			<object class="NSWindowTemplate" id="1021054522">
 				<int key="NSWindowStyleMask">8211</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 384}, {349, 126}}</string>
+				<string key="NSWindowRect">{{935, 985}, {349, 126}}</string>
 				<int key="NSWTFlags">1677721600</int>
 				<string key="NSWindowTitle">Preferences</string>
 				<string key="NSWindowClass">NSPanel</string>
 				<nil key="NSViewClass"/>
+				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<object class="NSView" key="NSWindowView" id="639904980">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
@@ -289,12 +290,6 @@
 				<bool key="NSAppliesImmediately">YES</bool>
 			</object>
 			<object class="NSUserDefaultsController" id="437076595">
-				<object class="NSMutableArray" key="NSDeclaredKeys">
-					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>should_play_sound</string>
-					<string>shouldPlaySound</string>
-					<string>sound</string>
-				</object>
 				<bool key="NSSharedInstance">YES</bool>
 			</object>
 		</object>
@@ -652,9 +647,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
-					<string>{{639, 527}, {349, 126}}</string>
+					<string>{{303, 620}, {349, 126}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{639, 527}, {349, 126}}</string>
+					<string>{{303, 620}, {349, 126}}</string>
 					<integer value="0"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -670,7 +665,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{778, 526}, {182, 103}}</string>
+					<string>{{442, 619}, {182, 103}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>

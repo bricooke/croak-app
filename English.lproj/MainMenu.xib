@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="395"/>
+			<integer value="394"/>
 			<integer value="29"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
@@ -731,7 +731,7 @@
 			<object class="NSWindowTemplate" id="84891084">
 				<int key="NSWindowStyleMask">8223</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 136}, {377, 374}}</string>
+				<string key="NSWindowRect">{{1101, 785}, {377, 374}}</string>
 				<int key="NSWTFlags">1677721600</int>
 				<string key="NSWindowTitle">Croak</string>
 				<string key="NSWindowClass">NSPanel</string>
@@ -2397,9 +2397,9 @@
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
-					<string>{{952, 785}, {377, 374}}</string>
+					<string>{{1101, 785}, {377, 374}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{952, 785}, {377, 374}}</string>
+					<string>{{1101, 785}, {377, 374}}</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>HMBlkScrollView</string>

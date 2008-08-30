@@ -7,7 +7,7 @@
 #
 
 class HoptoadInfoSheetController < NSWindowController
-  ib_outlet :domain, :auth_token
+  ib_outlet :domain, :auth_token, :progress, :cancel, :save, :error_label
   
   ib_action :cancel do |sender|
     self.window.close
@@ -16,20 +16,29 @@ class HoptoadInfoSheetController < NSWindowController
   
   ib_action :save do
     # make sure it works
-    # Spinner!
     Thread.new do 
+      @error_label.setStringValue("")
+      
+      [@domain, @auth_token, @cancel, @save].each do |control|
+        control.setEnabled(false)
+      end
+      @progress.startAnimation(self)
+      @progress.setHidden(false)
+      
       h = HoptoadInfo.create({
         :domain => self.domain,
         :auth_token => self.auth_token
       })
       
-      @domain.setStringValue("Thinking...")
-
       if h.save
         self.window.close
         NSApp.endSheet_returnCode_(self.window, NSOKButton)
       else
-        @domain.setStringValue("ERROR!")
+        @error_label.setStringValue("Invalid domain or auth token.")
+        @progress.setHidden(true)
+        [@auth_token, @domain, @cancel, @save].each do |control|
+          control.setEnabled(true)
+        end
       end
     end
   end
