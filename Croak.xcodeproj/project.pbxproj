@@ -12,6 +12,7 @@
 		4DDCA70A0ACC9A6100E082CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		4DDCA70C0ACC9A6100E082CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		4DDCA70D0ACC9A6100E082CE /* RubyCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E24E03AEB6EC03A81C6F /* RubyCocoa.framework */; };
+		D60484F00E690653007A5DDD /* Croak.icns in Resources */ = {isa = PBXBuildFile; fileRef = D60484EF0E690653007A5DDD /* Croak.icns */; };
 		D61EAC620E68F9DE005C6B07 /* Growl.rb in Resources */ = {isa = PBXBuildFile; fileRef = D61EAC610E68F9DE005C6B07 /* Growl.rb */; };
 		D61EAC8E0E68FDC9005C6B07 /* gems in Resources */ = {isa = PBXBuildFile; fileRef = D61EAC790E68FDC9005C6B07 /* gems */; };
 		D628123A0E62DCAE00FBEDF4 /* NSSound+SoundList.m in Sources */ = {isa = PBXBuildFile; fileRef = D62812380E62DCAE00FBEDF4 /* NSSound+SoundList.m */; };
@@ -61,6 +62,7 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		4DDCA7110ACC9A6100E082CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDCA7120ACC9A6100E082CE /* Croak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Croak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60484EF0E690653007A5DDD /* Croak.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Croak.icns; path = Resources/Croak.icns; sourceTree = "<group>"; };
 		D61EAC610E68F9DE005C6B07 /* Growl.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = Growl.rb; path = 3rdParty/Growl.rb; sourceTree = "<group>"; };
 		D61EAC790E68FDC9005C6B07 /* gems */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gems; path = 3rdParty/gems; sourceTree = "<group>"; };
 		D62812370E62DCAE00FBEDF4 /* NSSound+SoundList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSound+SoundList.h"; path = "3rdParty/NSSound+SoundList.h"; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D60484EF0E690653007A5DDD /* Croak.icns */,
 				D6436F000E5E5F4D0018B508 /* green_frog.gif */,
 				D6436F010E5E5F4D0018B508 /* grey_frog.gif */,
 				D62BD9660E5D9CAB00119FB7 /* MainMenu.xib */,
@@ -316,6 +319,7 @@
 				D628125C0E63B95400FBEDF4 /* PreferencesController.rb in Resources */,
 				D62813230E63C9B900FBEDF4 /* CroakTableView.rb in Resources */,
 				D61EAC620E68F9DE005C6B07 /* Growl.rb in Resources */,
+				D60484F00E690653007A5DDD /* Croak.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

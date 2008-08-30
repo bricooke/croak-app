@@ -27,8 +27,7 @@ def rb_main_init
   rbfiles = Dir.entries(path).select {|x| /\.rb\z/ =~ x}
   rbfiles -= [ File.basename(__FILE__) ]
   rbfiles.each do |path|
-    next if File.basename(path) == "Error.rb"
-    NSLog(path)
+    next if File.basename(path) == "Error.rb" # save that guy for later (takes too long to load)
     require( File.basename(path) )
   end
 end

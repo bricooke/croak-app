@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Croak</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>Croak.icns</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -15,7 +15,7 @@
 	<key>CFBundleSignature</key>
 	<string>roCr</string>
 	<key>CFBundleVersion</key>
-	<string>1.0 (rev-GIT)</string>
+	<string>0.2 (rev-GIT)</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
@@ -23,7 +23,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.roobasoft.CroakApp</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.2</string>
 	<key>NSUIElement</key>
 	<string>1</string>
 </dict>

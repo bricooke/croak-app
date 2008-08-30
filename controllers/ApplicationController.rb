@@ -23,7 +23,7 @@ class ApplicationController < NSObject
     NSUserDefaults.standardUserDefaults.registerDefaults(defaults)
     
     # register with growl (rawr)
-    @growl = GrowlNotifier.new('Croak',['New error'], nil, OSX::NSWorkspace.sharedWorkspace().iconForFileType_('unknown'))
+    @growl = GrowlNotifier.new('Croak',['New error'], nil, NSImage.imageNamed("Croak"))
     @growl.register()
   end
   
