@@ -67,7 +67,13 @@ class ApplicationController < NSObject
   end
   
   ib_action :show_preferences do |sender|
-    @preferences_controller ||= PreferencesController.alloc.init
-    @preferences_controller.showWindow(self)
+    @preferences ||= PreferencesController.alloc.initWithWindowNibName("Preferences")
+    
+    NSApp.beginSheet_modalForWindow_modalDelegate_didEndSelector_contextInfo_(
+      @preferences.window,
+      @window,
+      self,
+      nil,
+      nil)
   end
 end

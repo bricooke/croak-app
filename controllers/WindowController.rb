@@ -10,6 +10,7 @@ class WindowController < NSObject
   ib_outlet :window, :croak_controller
   ib_outlet :errors_scroll_view, :errors_table_view
   ib_outlet :progress, :loading_text
+  ib_outlet :gear_button
   
   def awakeFromNib
     @status_item = NSStatusBar.systemStatusBar.statusItemWithLength(27.0)
@@ -50,5 +51,22 @@ class WindowController < NSObject
     err = @croak_controller.error(@errors_table_view.selectedRow)
     NSWorkspace.sharedWorkspace.openURL(NSURL.URLWithString("http://makalumedia.hoptoadapp.com/errors/#{err[:id]}"));
     toggle_croaks(self)
+  end
+  
+  ib_action :refresh do
+    Thread.new do
+      @croak_controller.refresh_errors
+    end
+  end
+  
+  ib_action :show_about do
+    @about ||= AboutController.alloc.initWithWindowNibName("About")
+    
+    NSApp.beginSheet_modalForWindow_modalDelegate_didEndSelector_contextInfo_(
+      @about.window,
+      @window,
+      self,
+      nil,
+      nil)
   end
 end

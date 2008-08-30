@@ -8,11 +8,15 @@
 class CroakController < NSObject
   ib_outlet :errors_array_controller, :window_controller, :application_controller, :progress
   
+  kvc_accessor :refreshing
+  
   def initialize
     @refreshed = 0
   end
-  
+    
   def refresh_errors
+    self.refreshing = true
+    
     go_green = false
     @progress.startAnimation(self)
     @errors_array_controller.content.removeAllObjects
@@ -30,6 +34,7 @@ class CroakController < NSObject
     @window_controller.go_green(self) if go_green
     
     @refreshed += 1
+    self.refreshing = false
   end
   
   def error(index)
