@@ -17,6 +17,11 @@ class HoptoadInfoSheetController < NSWindowController
   ib_action :save do
     # make sure it works
     Thread.new do 
+      h = HoptoadInfo.create({
+        :domain => self.domain,
+        :auth_token => self.auth_token
+      })
+      
       @error_label.setStringValue("")
       
       [@domain, @auth_token, @cancel, @save].each do |control|
@@ -24,11 +29,6 @@ class HoptoadInfoSheetController < NSWindowController
       end
       @progress.startAnimation(self)
       @progress.setHidden(false)
-      
-      h = HoptoadInfo.create({
-        :domain => self.domain,
-        :auth_token => self.auth_token
-      })
       
       if h.save
         self.window.close
