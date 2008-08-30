@@ -258,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DDCA70E0ACC9A6100E082CE /* Build configuration list for PBXNativeTarget "Croak" */;
 			buildPhases = (
+				D61EAD730E6901DF005C6B07 /* Set version */,
 				4DDCA7040ACC9A6100E082CE /* Headers */,
 				4DDCA7050ACC9A6100E082CE /* Resources */,
 				4DDCA7090ACC9A6100E082CE /* Sources */,
@@ -319,6 +320,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D61EAD730E6901DF005C6B07 /* Set version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "# git-bundle-version.rb - Append short Git revision to CFBundleVersion in Info.plist\n#\n# THIS SCRIPT EXPECTS TO BE RUN FROM XCODE AS A RUN SCRIPT PHASE TO A BUILD TARGET\n#\n# Copyright 2008 Stateful Labs <mark@stateful.net>\n# All rights reserved.\n \nrequire 'fileutils'\n \n# Specify path to git executable\ngit_bin = \"/usr/local/git/bin/git\"\n \nrev = `#{git_bin} log --abbrev-commit --pretty=oneline | head -1 | cut -f1 -d'.'`.gsub(\"\\n\",\"\")\nfile = \"#{ENV['BUILT_PRODUCTS_DIR']}/#{ENV['INFOPLIST_PATH']}\"\n \nFile.open(file, 'r+') do |f|\n  lines = f.readlines\n  lines.each do |it|\n    it.gsub!(/GIT/, rev)\n  end\n  f.pos = 0\n  f.print lines\n  f.truncate(f.pos)\nend\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4DDCA7090ACC9A6100E082CE /* Sources */ = {
