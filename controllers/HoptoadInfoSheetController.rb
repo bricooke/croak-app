@@ -7,7 +7,8 @@
 #
 
 class HoptoadInfoSheetController < NSWindowController
-  ib_outlet :domain, :auth_token, :progress, :cancel, :save, :error_label
+  ib_outlet :domain_text_field, :auth_token_text_field, :progress, :cancel, :save, :error_label
+  kvc_accessor :auth_token, :domain
   
   ib_action :cancel do |sender|
     self.window.close
@@ -15,16 +16,18 @@ class HoptoadInfoSheetController < NSWindowController
   end
   
   ib_action :save do
+    @auth_token_text_field.selectText(self) #forces end editing and forces KVC update (workaround)
+    
     # make sure it works
     Thread.new do 
       h = HoptoadInfo.create({
-        :domain => self.domain,
-        :auth_token => self.auth_token
+        :domain => domain.strip,
+        :auth_token => auth_token.strip
       })
       
       @error_label.setStringValue("")
       
-      [@domain, @auth_token, @cancel, @save].each do |control|
+      [@domain_text_field, @auth_token_text_field, @cancel, @save].each do |control|
         control.setEnabled(false)
       end
       @progress.startAnimation(self)
@@ -36,18 +39,10 @@ class HoptoadInfoSheetController < NSWindowController
       else
         @error_label.setStringValue("Invalid domain or auth token.")
         @progress.setHidden(true)
-        [@auth_token, @domain, @cancel, @save].each do |control|
+        [@auth_token_text_field, @domain_text_field, @cancel, @save].each do |control|
           control.setEnabled(true)
         end
       end
     end
-  end
-  
-  def domain
-    @domain.stringValue.strip
-  end
-  
-  def auth_token
-    @auth_token.stringValue.strip
   end
 end
