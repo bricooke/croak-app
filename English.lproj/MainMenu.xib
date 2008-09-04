@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="481"/>
+			<integer value="405"/>
 			<integer value="57"/>
 			<integer value="460"/>
 		</object>
@@ -830,7 +830,7 @@
 												<int key="NSColorSpace">1</int>
 												<bytes key="NSRGB">MC44MDAwMDAwMSAwLjgwMDAwMDAxIDAuODAwMDAwMDEAA</bytes>
 											</object>
-											<double key="NSRowHeight">6.400000e+01</double>
+											<double key="NSRowHeight">7.400000e+01</double>
 											<int key="NSTvFlags">314572800</int>
 											<int key="NSColumnAutoresizingStyle">5</int>
 											<int key="NSDraggingSourceMaskForLocal">15</int>
@@ -875,7 +875,7 @@
 							<reference key="NSVScroller" ref="760521325"/>
 							<reference key="NSHScroller" ref="925021171"/>
 							<reference key="NSContentView" ref="824481424"/>
-							<bytes key="NSScrollAmts">QSAAAEEgAABChAAAQoQAAA</bytes>
+							<bytes key="NSScrollAmts">QSAAAEEgAABCmAAAQpgAAA</bytes>
 						</object>
 						<object class="NSProgressIndicator" id="957285285">
 							<reference key="NSNextResponder" ref="1067966219"/>
@@ -1548,6 +1548,14 @@
 						<reference key="destination" ref="378272377"/>
 					</object>
 					<int key="connectionID">489</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">errors_table_view</string>
+						<reference key="source" ref="64969789"/>
+						<reference key="destination" ref="816423141"/>
+					</object>
+					<int key="connectionID">490</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2662,8 +2670,8 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>RSActionButton</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<integer value="1"/>
-					<string>{{576, 764}, {158, 83}}</string>
+					<reference ref="9"/>
+					<string>{{465, 1019}, {158, 83}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -2728,7 +2736,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">489</int>
+			<int key="maxID">490</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2775,11 +2783,13 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>application_controller</string>
 							<string>errors_array_controller</string>
+							<string>errors_table_view</string>
 							<string>progress</string>
 							<string>window_controller</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>

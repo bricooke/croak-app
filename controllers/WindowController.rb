@@ -29,6 +29,7 @@ class WindowController < NSObject
       @status_item.setImage(NSImage.imageNamed("grey_frog"))
       @window.makeKeyAndOrderFront(nil)
       NSApplication.sharedApplication.activateIgnoringOtherApps(true)
+      @errors_table_view.setNeedsDisplay(true)
     end
   end
   
@@ -54,7 +55,7 @@ class WindowController < NSObject
   end
   
   ib_action :refresh do
-    Thread.new do
+    Thread.start do
       @croak_controller.refresh_errors
     end
   end
