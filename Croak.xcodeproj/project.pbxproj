@@ -365,7 +365,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /usr/bin/ruby;
-			shellScript = "# git-bundle-version.rb - Append short Git revision to CFBundleVersion in Info.plist\n#\n# THIS SCRIPT EXPECTS TO BE RUN FROM XCODE AS A RUN SCRIPT PHASE TO A BUILD TARGET\n#\n# Copyright 2008 Stateful Labs <mark@stateful.net>\n# All rights reserved.\n \nrequire 'fileutils'\n \n# Specify path to git executable\ngit_bin = \"/usr/local/git/bin/git\"\n \nrev = `#{git_bin} log --abbrev-commit --pretty=oneline | head -1 | cut -f1 -d'.'`.gsub(\"\\n\",\"\")\nfile = \"#{ENV['BUILT_PRODUCTS_DIR']}/#{ENV['INFOPLIST_PATH']}\"\n \nFile.open(file, 'r+') do |f|\n  lines = f.readlines\n  lines.each do |it|\n    it.gsub!(/GIT/, rev)\n  end\n  f.pos = 0\n  f.print lines\n  f.truncate(f.pos)\nend\n";
+			shellScript = "# git-bundle-version.rb - Append short Git revision to CFBundleVersion in Info.plist\n#\n# THIS SCRIPT EXPECTS TO BE RUN FROM XCODE AS A RUN SCRIPT PHASE TO A BUILD TARGET\n#\n# Copyright 2008 Stateful Labs <mark@stateful.net>\n# All rights reserved.\n \nrequire 'fileutils'\n \n# Specify path to git executable\ngit_bin = \"/usr/bin/env git\"\n\nrev = `#{git_bin} log --abbrev-commit --pretty=oneline | head -1 | cut -f1 -d'.'`.gsub(\"\\n\",\"\")\nfile = \"#{ENV['BUILT_PRODUCTS_DIR']}/#{ENV['INFOPLIST_PATH']}\"\n \nFile.open(file, 'r+') do |f|\n  lines = f.readlines\n  lines.each do |it|\n    it.gsub!(/GIT/, rev)\n  end\n  f.pos = 0\n  f.print lines\n  f.truncate(f.pos)\nend\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

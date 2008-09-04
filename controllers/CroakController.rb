@@ -42,6 +42,11 @@ class CroakController < NSObject
   end
   
   def error(index)
-    @errors_array_controller.arrangedObjects.objectAtIndex(index)
+    objs = @errors_array_controller.arrangedObjects
+    if objs.count > index
+      objs.objectAtIndex(index) 
+    else
+      nil
+    end
   end
 end

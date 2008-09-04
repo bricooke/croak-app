@@ -53,7 +53,10 @@ class ApplicationController < NSObject
   def show_errors(timer = nil, user_info = nil)
     begin # thread
       NSLog("Refreshing...")
-      @croak_controller.refresh_errors
+      begin
+        @croak_controller.refresh_errors
+      rescue SocketError => e
+      end
       
       NSTimer.scheduledTimerWithTimeInterval_target_selector_userInfo_repeats(
         NSUserDefaults.standardUserDefaults.objectForKey( ApplicationController::PREF_REFRESH_SECONDS).integerValue,
