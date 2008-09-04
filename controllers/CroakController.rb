@@ -30,8 +30,10 @@ class CroakController < NSObject
         @application_controller.growl.notify('New error', e.error_message, e.last_notice_at.to_s(:short) + " " + e.notices_count.to_s) if @refreshed > 0
       end
       @errors_array_controller.insertObject_atArrangedObjectIndex(e.to_hash, 0)
-      @errors_table_view.setNeedsDisplay(true)
     end
+    @errors_table_view.reloadData
+    
+    @errors_table_view.reloadData
     @window_controller.showErrors
     @window_controller.go_green(self) if go_green
     

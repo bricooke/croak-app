@@ -50,20 +50,18 @@ class ApplicationController < NSObject
     show_errors
   end
   
-  def show_errors
-    Thread.start do
-      while true
-        begin
-          @croak_controller.refresh_errors
-        rescue Exception => e
-          # todo: eat our own dog food and send this to hoptoad?
-          # would have to confirm that with the user first.
-          NSLog("OH NOES!: #{e} - #{e.message}")
-          NSLog(e.backtrace.to_s)
-        end
-        sleep NSUserDefaults.standardUserDefaults.objectForKey( ApplicationController::PREF_REFRESH_SECONDS).integerValue
-
-      end
+  def show_errors(timer = nil, user_info = nil)
+    begin # thread
+      NSLog("Refreshing...")
+      @croak_controller.refresh_errors
+      
+      NSTimer.scheduledTimerWithTimeInterval_target_selector_userInfo_repeats(
+        NSUserDefaults.standardUserDefaults.objectForKey( ApplicationController::PREF_REFRESH_SECONDS).integerValue,
+        self,
+        "show_errors",
+        nil,
+        false
+      )
     end
   end
   

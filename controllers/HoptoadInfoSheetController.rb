@@ -19,7 +19,7 @@ class HoptoadInfoSheetController < NSWindowController
     @auth_token_text_field.selectText(self) #forces end editing and forces KVC update (workaround)
     
     # make sure it works
-    Thread.start do 
+    begin # thread 
       h = HoptoadInfo.create({
         :domain => domain.strip,
         :auth_token => auth_token.strip

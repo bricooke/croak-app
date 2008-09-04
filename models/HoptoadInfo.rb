@@ -37,9 +37,9 @@ class HoptoadInfo
     begin
       self.recent_errors
       true
-    rescue Exception => e
-      NSLog(e.message)
-      false
+    # rescue Exception => e
+    #   NSLog(e.message)
+    #   false
     end
   end
   

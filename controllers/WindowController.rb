@@ -55,7 +55,7 @@ class WindowController < NSObject
   end
   
   ib_action :refresh do
-    Thread.start do
+    begin # thread
       @croak_controller.refresh_errors
     end
   end
