@@ -15,3 +15,4 @@ h2. todo (please feel free to contribute :-D )
 * Figure out how to visually differentiate projects
 * Make it prettier
 
+Tickets are being tracked in Lighthouse at "http://roobasoft.lighthouseapp.com/projects/16910-croak":http://roobasoft.lighthouseapp.com/projects/16910-croak
