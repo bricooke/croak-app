@@ -1,0 +1,17 @@
+h2. about
+
+Croak is a RubyCocoa app for alerting you of exceptions sent to hoptoadapp.com 
+
+You can download Croak at http://files.roobasoft.com/croak.0.4.zip
+
+
+
+h2. todo (please feel free to contribute :-D )
+
+* Fix crash when network goes away
+* Figure out how to correctly thread things
+* Add ability to edit your domain and token
+* Add ability to support multiple domains and tokens
+* Figure out how to visually differentiate projects
+* Make it prettier
+
