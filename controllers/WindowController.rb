@@ -53,8 +53,7 @@ class WindowController < NSObject
     
     return if err.nil?
     
-    # NSWorkspace.sharedWorkspace.openURL(NSURL.URLWithString("http://makalumedia.hoptoadapp.com/errors/#{err[:id]}"));
-    NSWorkspace.sharedWorkspace.openURL(NSURL.URLWithString("#{err.connection.site}/errors/#{err[:id]}"));
+    NSWorkspace.sharedWorkspace.openURL(NSURL.URLWithString("http://#{err[:domain]}.hoptoadapp.com/errors/#{err[:id]}"));
     toggle_croaks(self)
   end
   

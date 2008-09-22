@@ -46,7 +46,9 @@ class HoptoadInfo
   def recent_errors
     require "Error.rb" unless defined?(Error)
 
-    Error.find(:all, :connection => ActiveResource::Connection.new("http://#{@domain}.hoptoadapp.com"), :params => {:auth_token => @auth_token})
+    error = Error.find(:all, :connection => ActiveResource::Connection.new("http://#{@domain}.hoptoadapp.com"), :params => {:auth_token => @auth_token})
+    error.each {|e| e.domain = @domain}
+    error
   end
   
   def save

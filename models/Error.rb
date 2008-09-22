@@ -11,6 +11,8 @@ require 'duration'
 require File.dirname(__FILE__) + "/active_resource_instance_authentication/init.rb"
 
 class Error < ActiveResource::Base
+  attr_accessor :domain
+  
   self.site = ""
   
   def self.fuzzy_last_notice_at(time)
@@ -44,6 +46,7 @@ class Error < ActiveResource::Base
       :line_number => line_number.to_s || "",
       :last_notice_at => last_notice_at,
       :notices_count => notices_count,
+      :domain => domain
     }
   end
 
