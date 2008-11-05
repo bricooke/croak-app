@@ -44,7 +44,7 @@ class Error < ActiveResource::Base
       :error_message => error_message || "",
       :file => File.basename(file || ""),
       :line_number => line_number.to_s || "",
-      :last_notice_at => last_notice_at,
+      :last_notice_at => most_recent_notice_at,
       :notices_count => notices_count,
       :domain => domain
     }

@@ -27,7 +27,7 @@ class CroakController < NSObject
     @recent_errors.each do |e|
       if !previous_errors.include?(e)
         go_green = true 
-        @application_controller.growl.notify('New error', e.error_message, e.last_notice_at.to_s(:short) + " " + e.notices_count.to_s) if @refreshed > 0
+        @application_controller.growl.notify('New error', e.error_message, e.most_recent_notice_at.to_s(:short) + " " + e.notices_count.to_s) if @refreshed > 0
       end
       @errors_array_controller.insertObject_atArrangedObjectIndex(e.to_hash, 0)
     end
