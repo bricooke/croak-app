@@ -2,7 +2,7 @@ h2. about
 
 Croak is a RubyCocoa app for alerting you of exceptions sent to hoptoadapp.com 
 
-You can download Croak at "http://files.roobasoft.com/croak.0.5.zip":http://files.roobasoft.com/croak.0.5.zip
+You can download Croak at "http://files.roobasoft.com/croak.0.6.zip":http://files.roobasoft.com/croak.0.6.zip
 
 
 
