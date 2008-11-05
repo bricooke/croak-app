@@ -62,7 +62,7 @@ class CroakCell < NSTextFieldCell
     dateFormatter = NSDateFormatter.alloc.init
     dateFormatter.setDateStyle(NSDateFormatterMediumStyle)
     dateFormatter.setTimeStyle(NSDateFormatterMediumStyle)
-    formatted_date = dateFormatter.stringFromDate(error[:most_recent_notice_at]).to_s
+    formatted_date = dateFormatter.stringFromDate(error[:last_notice_at]).to_s
     
     last_notice_at = Error.fuzzy_last_notice_at(Time.parse(formatted_date))
     attrString = NSMutableAttributedString.alloc.initWithString_attributes(last_notice_at, attrsDictionary)
